@@ -1,0 +1,6 @@
+# ~/.zkeys
+bindkey -M viins '^A'     vi-beginning-of-line
+bindkey -M viins '^E'     vi-end-of-line
+bindkey -M viins '\e[P'   delete-char               # <DEL>
+bindkey -M viins '\e[H'   vi-beginning-of-line      # <HOME>
+bindkey -M viins '\e[4~'  vi-end-of-line            # <END>

@@ -1,0 +1,62 @@
+# ~/.zsh_aliases
+## ls
+alias ls='ls -F --color=auto --group-directories-first -X -h'
+alias l='ls'
+alias ll='ls -l'
+alias la='ls -A'
+alias lla='ls -lA'
+alias l1='/bin/ls -1'
+alias lt='noglob tree -C --dirsfirst -I node_modules\|__pycache__\|*.egg-info\|venv'
+## vim
+alias v='vim'
+alias ve='vim ~/.vimrc'
+## zsh
+alias ze='v ~/.zshrc'
+alias zp='v ~/.zprofile'
+alias za='v ~/.zaliases'
+alias sz='source ~/.zshrc'
+alias hg='history | grep'
+## system
+alias p='pacman --color auto'
+alias y='yay --color auto'
+alias sc='systemctl'
+alias nc='netctl'
+alias ping='ping -4'
+# ssh
+alias scp="noglob scp"
+alias ssh="noglob ssh"
+alias sa='ssh-add'
+# dictd
+alias dic="sdcv --color"
+# git
+alias g="git"
+alias ga='git add'
+alias gc='git commit'
+alias gl='git log'
+alias gs='git status --porcelain'
+alias gco='git checkout'
+alias gb='git branch'
+# python
+alias ae='deactivate &> /dev/null; source .venv/bin/activate'
+alias de='deactivate'
+alias py='python'
+# misc
+alias mu='mupdf'
+alias ydl="noglob youtube-dl -x --audio-format mp3 --audio-quality 0"
+alias youtube-dl="noglob youtube-dl"
+alias rn="perl-rename"
+alias e3="eyeD3"
+alias dict="sdcv -n -c -0 -1"
+alias ffprobe="ffprobe -hide_banner"
+# telegram
+alias tg="telegram-cli"
+# tmux
+alias tm="tmux"
+alias tl="tmux list-sessions"
+alias ta="tmux attach -t"
+alias td="tmux detach"
+alias tn="tmux new"
+# task
+alias t="task"
+# figlet / toilet
+alias toi="toilet -f 3d"
