@@ -1,0 +1,14 @@
+[user]
+    name = Nick Nightingale
+    email = mail@netzego.de
+[core]
+    editor = vim
+[init]
+    defaultBranch = main
+[alias]
+    co = checkout
+    br = branch
+    c = commit
+    st = status
+    hs = log --oneline
+    df = diff
