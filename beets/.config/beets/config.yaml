@@ -4,7 +4,7 @@ library: ~/.config/beets/library.db
 log: ~/audio/.log
 
 import:
-  move: no
+  move: yes
   copy: yes
 
 plugins: edit fetchart embedart discogs
