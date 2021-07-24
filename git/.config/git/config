@@ -12,3 +12,4 @@
     st = status
     hs = log --oneline
     df = diff
+    root = rev-parse --show-toplevel
