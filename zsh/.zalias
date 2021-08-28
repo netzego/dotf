@@ -40,7 +40,7 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gcd='cd $(git root)'
 # python
-alias ae='cd $(gir root); deactivate &> /dev/null; source .venv/bin/activate; cd -'
+alias ae='cd $(git root); deactivate &> /dev/null; source .venv/bin/activate; cd -'
 alias de='deactivate'
 alias py='python'
 # misc
