@@ -3,6 +3,7 @@ export EDITOR="vim"
 export PATH="$HOME/scripts:$PATH"
 export PYTHONDONTWRITEBYTECODE=1
 export SYSTEMD_COLORS=16
+export MANWIDTH=79
 export XDG_CONFIG_HOME="$HOME/.config"
 #export GOPATH="$HOME/go:$HOME/hack/go:/usr/lib/go"
 # start keychain
