@@ -10,8 +10,8 @@ alias lt='noglob tree -C --dirsfirst -I node_modules\|__pycache__\|*.egg-info\|v
 alias ltd='lt -d'
 alias lta='lt -a'
 ## vim
-alias v='vim'
-alias ve='vim ~/.vimrc'
+alias v='nvim'
+alias nv='nvim'
 ## zsh
 alias ze='v ~/.zshrc'
 alias zp='v ~/.zprofile'
