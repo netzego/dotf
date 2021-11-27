@@ -11,7 +11,6 @@ alias ltd='lt -d'
 alias lta='lt -a'
 ## vim
 alias v='nvim'
-alias nv='nvim'
 ## zsh
 alias ze='v ~/.zshrc'
 alias zp='v ~/.zprofile'
@@ -19,8 +18,6 @@ alias za='v ~/.zaliases'
 alias sz='source ~/.zshrc'
 alias hg='history | grep'
 ## system
-alias p='pacman --color auto'
-alias y='yay --color auto'
 alias sc='systemctl'
 alias nc='netctl'
 alias ping='ping -4'
@@ -30,11 +27,12 @@ alias ssh="noglob ssh"
 alias sa='ssh-add'
 # dictd
 alias dic="sdcv --color"
+alias dict="sdcv -n -c -0 -1"
 # git
 alias g="git"
 alias ga='git add'
 alias gc='git commit'
-alias gl='git log'
+alias gl='git log --oneline --decorate'
 alias gs='git status --porcelain'
 alias gco='git checkout'
 alias gb='git branch'
@@ -49,7 +47,6 @@ alias ydl="noglob youtube-dl -x --audio-format mp3 --audio-quality 0"
 alias youtube-dl="noglob youtube-dl"
 alias rn="perl-rename"
 alias e3="eyeD3"
-alias dict="sdcv -n -c -0 -1"
 alias ffprobe="ffprobe -hide_banner"
 # telegram
 alias tg="telegram-cli"
@@ -59,7 +56,5 @@ alias tl="tmux list-sessions"
 alias ta="tmux attach -t"
 alias td="tmux detach"
 alias tn="tmux new"
-# task
-alias t="task"
 # figlet / toilet
 alias toi="toilet -f 3d"
