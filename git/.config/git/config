@@ -2,7 +2,7 @@
     name = netzego
     email = mail@netzego.de
 [core]
-    editor = vim
+    editor = nvim
 [init]
     defaultBranch = main
 [alias]
