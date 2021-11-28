@@ -10,6 +10,7 @@
     br = branch
     c = commit
     st = status
-    hs = log --oneline
     df = diff
+    ll = log --stat
+    l1 = log --oneline
     root = rev-parse --show-toplevel
