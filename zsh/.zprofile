@@ -1,5 +1,5 @@
 # ~./zprofile
-export EDITOR="vim"
+export EDITOR="nvim"
 export PATH="$HOME/scripts:$PATH"
 export PYTHONDONTWRITEBYTECODE=1
 export SYSTEMD_COLORS=16
