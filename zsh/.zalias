@@ -9,6 +9,7 @@ alias l1='/bin/ls -1'
 alias lt='noglob tree -C --dirsfirst -I node_modules\|__pycache__\|*.egg-info\|venv'
 alias ltd='lt -d'
 alias lta='lt -a'
+alias fd="fd -c never"
 ## vim
 alias v='nvim'
 ## zsh
