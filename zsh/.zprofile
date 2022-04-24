@@ -2,6 +2,7 @@
 export EDITOR="nvim"
 export PATH="$HOME/scripts:$PATH"
 export PYTHONDONTWRITEBYTECODE=1
+export PIP_REQUIRE_VIRTUALENV=true
 export SYSTEMD_COLORS=16
 export MANWIDTH=79
 export XDG_CONFIG_HOME="$HOME/.config"
