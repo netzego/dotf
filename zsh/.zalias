@@ -42,6 +42,9 @@ alias gcd='cd $(git root)'
 alias ae='cd $(git root); deactivate &> /dev/null; source .venv/bin/activate; cd -'
 alias de='deactivate'
 alias py='python'
+# lua
+alias lae='cd $(git root); deactivate-lua &> /dev/null; source .hererocks/bin/activate; cd -'
+alias lde='deactivate-lua'
 # misc
 alias mu='mupdf'
 alias ydl="noglob youtube-dl -x --audio-format mp3 --audio-quality 0"
