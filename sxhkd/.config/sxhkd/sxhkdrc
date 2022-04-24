@@ -18,11 +18,11 @@ super + backslash
     bspc node -f last.local
 
 # focus the next/previous desktop in the current desktop
-super + bracket{left,right}
+super + {j,k}
 	bspc node -f {prev,next}.local.leaf
 
 # focus the next/previous desktop in the current monitor
-super + shift + bracket{left,right}
+	super + shift + {j,k}
 	bspc desktop -f {prev,next}.occupied
 
 # focus the last node/desktop
