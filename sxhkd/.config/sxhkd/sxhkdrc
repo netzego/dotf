@@ -18,19 +18,16 @@ super + backslash
     bspc node -f last.local
 
 # focus the next/previous desktop in the current desktop
-super + {j,k}
+super + {left,right}
 	bspc node -f {prev,next}.local.leaf
 
 # focus the next/previous desktop in the current monitor
-	super + shift + {j,k}
+super + shift + {left,right}
 	bspc desktop -f {prev,next}.occupied
 
 # focus the last node/desktop
 super + Tab
 	bspc desktop -f last.occupied
-
-
-
 
 # make sxhkd reload its configuration files:
 super + shift + r
