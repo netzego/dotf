@@ -1,6 +1,6 @@
 [user]
     name = netzego
-    email = mail@netzego.de
+    email = no-reply@netzego.de
 [core]
     editor = nvim
 [init]
@@ -11,6 +11,6 @@
     c = commit
     st = status
     df = diff
-    ll = log --stat
+    ll = log --stat --graph
     l1 = log --oneline
     root = rev-parse --show-toplevel
