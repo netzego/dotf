@@ -1,5 +1,6 @@
 # sxkhd
 # /usr/share/doc/bspwm/examples/sxhkdrc
+# xev -event keyboard
 
 # spawn a shell
 super + Return
@@ -74,7 +75,7 @@ super + ctrl + {m,x,y,z}
 #
 
 # focus the node in the given direction
-super + {_,shift + }{h,j,k,l}
+super + {_,shift + }{bracketleft,j,k,bracketright}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
