@@ -1,6 +1,6 @@
 [user]
     name = netzego
-    email = no-reply@netzego.de
+    email = github@netzego.de
 [core]
     editor = nvim
 [init]
