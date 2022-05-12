@@ -39,6 +39,7 @@ alias gs='git status --short'
 alias gco='git checkout'
 alias gb='git branch'
 alias gcd='cd $(git root)'
+alias gls="git ls-files"
 # python
 alias ae='cd $(git root); deactivate &> /dev/null; source .venv/bin/activate; cd -'
 alias de='deactivate'
