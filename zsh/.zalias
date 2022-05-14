@@ -33,8 +33,8 @@ alias dict="sdcv -n -c -0 -1"
 # git
 alias g="git"
 alias ga='git add'
-alias gc='git commit -v'
-alias gl='git log --oneline --decorate'
+alias gc='git commit -v -p'
+alias gl='git log --oneline --decorate -30'
 alias gs='git status --short'
 alias gco='git checkout'
 alias gb='git branch'
