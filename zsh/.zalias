@@ -35,6 +35,7 @@ alias g="git"
 alias ga='git add'
 alias gc='git commit -v -p'
 alias gl='git log --oneline --decorate -30'
+alias gla='git log --oneline --decorate'
 alias gs='git status --short'
 alias gco='git checkout'
 alias gb='git branch'
