@@ -4,7 +4,7 @@
 
 # spawn a shell
 super + Return
-	st
+	alacritty
 
 # program launcher
 super + d
