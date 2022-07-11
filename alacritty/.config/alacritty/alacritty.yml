@@ -8,22 +8,23 @@ window:
 
 font:
   normal:
-    family: Go Mono
+    # family: Go Mono
+    family: Unifont
     style: Regular
 
   bold:
-    family: Go Mono
+    family: Unifont
     style: Bold
 
   italic:
-    family: Go Mono
+    family: Unifont
     style: Italic
 
   bold_italic:
-    family: Go Mono
+    family: Unifont
     style: Bold Italic
 
-  size: 9
+  size: 11.5
 
 # The definition of color schemes.
 schemes:
