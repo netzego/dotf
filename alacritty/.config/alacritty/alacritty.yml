@@ -3,28 +3,29 @@ env:
 
 window:
   padding:
-    x: 3
-    y: 3
+    x: 4
+    y: 4
 
 font:
   normal:
     # family: Go Mono
-    family: Unifont
-    style: Regular
+    # style: Regular
+    family: Input Mono
+    style: Light
 
   bold:
-    family: Unifont
-    style: Bold
+    family: Input Mono
+    style: Medium
 
   italic:
-    family: Unifont
-    style: Italic
+    family: Input Mono
+    style: Light Italic
 
   bold_italic:
-    family: Unifont
-    style: Bold Italic
+    family: Input Mono
+    style: Medium Italic
 
-  size: 11.5
+  size: 9
 
 # The definition of color schemes.
 schemes:
