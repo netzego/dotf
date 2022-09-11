@@ -1,6 +1,8 @@
 # ~./zprofile
 export EDITOR="nvim"
-export PATH="$HOME/scripts:$HOME/.cargo/bin:$PATH"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/scripts:$HOME/.cargo/bin"
 export PYTHONDONTWRITEBYTECODE=1
 export PIP_REQUIRE_VIRTUALENV=true
 export SYSTEMD_COLORS=16
