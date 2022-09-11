@@ -24,7 +24,7 @@ alias sc='systemctl'
 alias nc='netctl'
 alias ping='ping -4'
 # ssh
-alias scp="noglob scp"
+# alias scp="noglob scp"
 alias ssh="TERM=xterm-256color noglob ssh"
 alias sa='ssh-add'
 # dictd
