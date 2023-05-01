@@ -1,32 +1,23 @@
 env:
   TERM: xterm-256color
-
 window:
   padding:
-    x: 4
-    y: 4
-
+    x: 2
+    y: 2
 font:
   normal:
-    # family: Go Mono
-    # style: Regular
     family: Input Mono
     style: Light
-
   bold:
     family: Input Mono
     style: Medium
-
   italic:
     family: Input Mono
     style: Light Italic
-
   bold_italic:
     family: Input Mono
     style: Medium Italic
-
-  size: 9
-
+  size: 10
 # The definition of color schemes.
 schemes:
   gruvbox_material_hard_dark: &gruvbox_material_hard_dark
@@ -164,6 +155,5 @@ schemes:
       magenta: "0x945e80"
       cyan: "0x4c7a5d"
       white: "0xe6d5ae"
-
 # Apply the color scheme.
 colors: *gruvbox_material_medium_light
