@@ -1,12 +1,12 @@
 # ~/.zsh_aliases
-## ls
-alias ls='ls -F --color=auto --group-directories-first -X -h'
+## ls -l -F -h -c --group-directories-first -v
+alias ls='ls --color=auto --group-directories-first -Fhv'
 alias l='ls'
 alias ll='ls -l'
 alias la='ls -A'
 alias lla='ls -lA'
 alias l1='/bin/ls -1'
-alias lt='noglob tree -C --dirsfirst -I node_modules\|__pycache__\|*.egg-info\|venv\|lua5?\|luajit\|target\|build'
+alias lt='noglob tree -C --dirsfirst -I node_modules\|__pycache__\|*.egg-info\|venv\|lua5?\|luajit\|target\|.git'
 alias ltd='lt -d'
 alias lta='lt -a'
 alias fd="fd -c never"
@@ -19,9 +19,15 @@ alias zp='v ~/.zprofile'
 alias za='v ~/.zaliases'
 alias sz='source ~/.zshrc'
 alias hg='history | grep'
-## system
-alias sc='systemctl'
-alias nc='netctl'
+# iproute2
+alias ib="ip -br"
+## systemd
+alias sd='systemctl'
+alias sda='systemd-analyze'
+alias sdu='systemctl --user'
+alias jc="journalctl"
+alias jcu="journalctl --user"
+# alias nc='netctl'
 alias ping='ping -4'
 # ssh
 # alias scp="noglob scp"
@@ -51,7 +57,8 @@ alias lae='cd $(git root); deactivate-lua &> /dev/null; source .hererocks/bin/ac
 alias lde='deactivate-lua'
 # misc
 alias mu='mupdf'
-alias ydl="noglob youtube-dl -x --audio-format mp3 --audio-quality 0"
+alias yt-dlp="yt-dlp --restricted-filenames"
+alias ytmp3="yt-dlp -x --audio-format mp3 --audio-quality 0" 
 alias youtube-dl="noglob youtube-dl"
 alias rn="perl-rename"
 alias e3="eyeD3"
