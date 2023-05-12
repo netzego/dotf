@@ -57,7 +57,7 @@ alias lae='cd $(git root); deactivate-lua &> /dev/null; source .hererocks/bin/ac
 alias lde='deactivate-lua'
 # misc
 alias mu='mupdf'
-alias yt-dlp="yt-dlp --restricted-filenames"
+alias yt-dlp="yt-dlp --restrict-filenames"
 alias ytmp3="yt-dlp -x --audio-format mp3 --audio-quality 0" 
 alias youtube-dl="noglob youtube-dl"
 alias rn="perl-rename"
