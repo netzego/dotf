@@ -1,2 +1,3 @@
 show-recent = 10
 scroll-page-aware = true
+set font "hack 14"
