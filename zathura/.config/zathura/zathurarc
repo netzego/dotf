@@ -1,3 +1,4 @@
-show-recent = 10
-scroll-page-aware = true
-set font "hack 14"
+set show-recent 16
+set scroll-page-aware false
+set selection-clipboard clipboard
+set font "Hack Regular 11"
