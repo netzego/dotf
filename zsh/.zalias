@@ -1,6 +1,6 @@
 # ~/.zsh_aliases
 ## ls -l -F -h -c --group-directories-first -v
-alias ls='ls --color=auto --group-directories-first -Fhv'
+alias ls='ls --color=auto --group-directories-first --time-style=long-iso -Fhv'
 alias l='ls'
 alias ll='ls -l'
 alias la='ls -A'
