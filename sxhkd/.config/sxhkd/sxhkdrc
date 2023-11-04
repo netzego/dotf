@@ -131,3 +131,15 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# multimedia keys
+# NOTE: to map a single key, we need to map sequence of press and release (beginning the same key with a `@` prefixed)
+
+XF86AudioMute; @XF86AudioMute
+    /usr/bin/amixer set Master toggle
+
+XF86AudioLowerVolume; @XF86AudioLowerVolume
+    /usr/bin/amixer -q set Master 5%- unmute
+
+XF86AudioRaiseVolume; @XF86AudioRaiseVolume
+    /usr/bin/amixer -q set Master 5%+ unmute
