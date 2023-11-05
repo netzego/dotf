@@ -1,0 +1,5 @@
+# ~/.bash_alias
+alias ls="ls"
+alias ll="ls -l"
+alias la="ls -a"
+alias v="nvim"

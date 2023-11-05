@@ -1,0 +1,3 @@
+#!/bin/bash
+
+export MANWIDTH=79
