@@ -1,2 +1,27 @@
 #!/bin/bash
-PS1="\u )"
+
+function prompt_user {
+    if [[ ${UID} == 0 ]]; then
+        echo "#"
+    else
+        echo ")"
+    fi
+}
+
+function prompt_pwd() {
+    declare -r pth="$(pwd | sed "s%^${HOME}%~%" | tr -s '/' | sed "s%^/%%")"
+	declare short=""
+	IFS=/ read -r -a patharr <<<"$pth"
+	for i in "${patharr[@]}"; do
+		[[ "${i}" != "~" ]] && short+="/"
+		[[ ${i:0:1} == "." ]] && short+="${i:0:2}" || short+="${i:0:1}"
+	done
+	echo "$short"
+}
+
+source /usr/share/git/completion/git-prompt.sh
+
+# single quotes `'` MUST be used here
+PS1='\h:$(prompt_pwd)'
+PS1+='$(__git_ps1 " %s")'
+PS1+=' $(prompt_user) '
