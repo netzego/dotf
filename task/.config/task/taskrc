@@ -37,3 +37,4 @@ include $XDG_CONFIG_HOME/task/colors
 #taskd.certificate=\/home\/anon\/.task\/anon.cert.pem
 #taskd.key=\/home\/anon\/.task\/anon.key.pem
 #taskd.ca=\/home\/anon\/.task\/ca.cert.pem
+news.version=2.6.0
