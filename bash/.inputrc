@@ -1,0 +1,11 @@
+# ~/.inputrc
+
+set editing-mode vi
+set show-mode-in-prompt on
+
+# different cursor for ins and cmd mode
+set vi-ins-mode-string "\1\e[6 q\2"
+set vi-cmd-mode-string "\1\e[2 q\2"
+
+# keymaps
+"\C-l": clear-screen
