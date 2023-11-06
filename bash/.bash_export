@@ -1,3 +1,4 @@
 #!/bin/bash
 
 export MANWIDTH=79
+export GIT_PS1_SHOWDIRTYSTATE=1
