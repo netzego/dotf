@@ -10,6 +10,9 @@ alias lt='noglob tree -C --dirsfirst -I node_modules\|__pycache__\|*.egg-info\|v
 alias ltd='lt -d'
 alias lta='lt -a'
 alias fd="fd -c never"
+# xorg
+alias xc="xclip -selection clipboard"
+alias xp="xclip -selection primary"
 ## vim
 alias v='nvim'
 alias eml='vipe --suffix eml | msmtp -d -t'
