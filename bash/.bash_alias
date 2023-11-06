@@ -1,5 +1,27 @@
 # ~/.bash_alias
-alias ls="ls"
+alias ls="ls --color=auto --group-directories-first --time-style=long-iso -Fhv"
 alias ll="ls -l"
-alias la="ls -a"
+alias la="ls -A"
+alias lla="ls -lA"
+alias l1="/bin/ls -1"
+alias lt="tree -C --dirsfirst -I node_modules\|__pycache__\|*.egg-info\|venv\|lua5?\|luajit\|target\|.git"
+alias ltd="lt -d"
+alias lta="lt -a"
+alias fd="fd -c never"
 alias v="nvim"
+# pushd & popd
+alias lsd="dirs -v"
+alias pud="pushd"
+alias pod="popd"
+# git
+alias g="git"
+alias ga='git add'
+alias gap='git add --patch'
+alias gc='git commit -v'
+alias gl='git log --oneline --decorate -30'
+alias gla='git log --oneline --decorate'
+alias gs='git status --short'
+alias gco='git checkout'
+alias gb='git branch -av'
+alias gcd='cd $(git root)'
+alias gls="git ls-files"
