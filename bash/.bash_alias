@@ -15,13 +15,13 @@ alias pud="pushd"
 alias pod="popd"
 # git
 alias g="git"
+alias gcd='cd $(git root)'
+alias gs='git status --short'
 alias ga='git add'
 alias gap='git add --patch'
 alias gc='git commit -v'
 alias gl='git log --oneline --decorate -30'
 alias gla='git log --oneline --decorate'
-alias gs='git status --short'
 alias gco='git checkout'
 alias gb='git branch -av'
-alias gcd='cd $(git root)'
 alias gls="git ls-files"
