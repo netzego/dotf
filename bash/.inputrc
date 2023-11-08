@@ -1,5 +1,6 @@
 # ~/.inputrc
 
+set keyseq-timeout 200
 set editing-mode vi
 set show-mode-in-prompt on
 
