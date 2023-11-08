@@ -25,3 +25,4 @@ alias gla='git log --oneline --decorate'
 alias gco='git checkout'
 alias gb='git branch -av'
 alias gls="git ls-files"
+alias gd="git diff"
