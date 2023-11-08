@@ -132,7 +132,10 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+#
 # multimedia keys
+#
+
 # NOTE: to map a single key, we need to map sequence of press and release (beginning the same key with a `@` prefixed)
 
 XF86AudioMute; @XF86AudioMute
