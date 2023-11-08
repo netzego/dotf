@@ -1,6 +1,11 @@
-#!/bin/sh
+#!/bin/bash
+
+# set bg and cursor for X
+xsetroot -gray
+xsetroot -cursor_name arrow
 
 sxhkd &
+dunst &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
