@@ -3,7 +3,9 @@
 # exit early if not an interactive shell
 [[ $- != *i* ]] && return
 
-eval "$(keychain --eval --noask --quiet --nogui)"
+if type -P keychain &>/dev/null; then
+    eval "$(keychain --eval --noask --quiet --nogui)"
+fi
 
 set -o vi
 
