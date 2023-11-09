@@ -3,6 +3,8 @@
 # exit early if not an interactive shell
 [[ $- != *i* ]] && return
 
+eval "$(keychain --eval --noask --quiet --nogui)"
+
 set -o vi
 
 [[ -f ~/.bash_export ]] && source ~/.bash_export
