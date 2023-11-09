@@ -31,3 +31,5 @@ alias gds="git diff --stat"
 alias tm="tmux"
 alias tl="tmux list-sessions"
 alias ta="tmux attach -t"
+# ssh-add
+alias sa="ssh-add"
