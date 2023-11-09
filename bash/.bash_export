@@ -3,3 +3,4 @@
 export EDITOR=nvim
 export MANWIDTH=79
 export GIT_PS1_SHOWDIRTYSTATE=1
+export PATH+="${HOME}/scripts:${PATH}"
