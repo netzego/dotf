@@ -8,6 +8,6 @@ if type -P keychain &>/dev/null; then
     eval "$(keychain --eval --noask --quiet --nogui)"
 fi
 
-[[ -f ~/.exports ]] && source ~/.bash_export
-[[ -f ~/.aliases ]] && source ~/.bash_alias
+[[ -f ~/.exports ]] && source ~/.aliases
+[[ -f ~/.aliases ]] && source ~/.exports
 [[ -f ~/.bash_prompt ]] && source ~/.bash_prompt
