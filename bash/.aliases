@@ -37,3 +37,6 @@ alias sa="ssh-add"
 # xclip
 alias xc="xclip -selection clipboard"
 alias xs="xclip -selection primary"
+# venv
+alias ae='cd $(git root); deactivate &> /dev/null; source .venv/bin/activate; cd -'
+alias de='deactivate'
