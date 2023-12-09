@@ -4,8 +4,8 @@
 xsetroot -gray
 xsetroot -cursor_name arrow
 
-sxhkd &
-dunst &
+pgrep -x sxhkd >/dev/null || sxhkd &
+pgrep -x dunst >/dev/null || dunst &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
