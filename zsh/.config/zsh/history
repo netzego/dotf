@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+setopt INC_APPEND_HISTORY	# do not wait to end of session for appending to $HISTFILE
+setopt NO_APPEND_HISTORY	# zsh sessions will append their history rather then replace it. default
+setopt NO_SHARE_HISTORY         # share history between all sessions.
+setopt NO_HIST_BEEP             # do not beep at the end of history
+setopt NO_EXTENDED_HISTORY      # write the history file in the ':start:elapsed;command' format.
+setopt HIST_EXPIRE_DUPS_FIRST   # expire a duplicate event first when trimming history.
+setopt HIST_IGNORE_DUPS         # do not record an event that was just recorded again.
+setopt HIST_IGNORE_ALL_DUPS     # delete an old recorded event if a new event is a duplicate.
+setopt HIST_FIND_NO_DUPS        # do not display a previously found event.
+setopt HIST_IGNORE_SPACE        # do not record an event starting with a space.
+setopt HIST_SAVE_NO_DUPS        # do not write a duplicate event to the history file.
+setopt HIST_VERIFY              # do not execute immediately upon history expansion.
+setopt HIST_NO_FUNCTIONS	# do not save function definitions
