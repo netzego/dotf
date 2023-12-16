@@ -1,22 +1,16 @@
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-bindkey -v
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/anon/.zshrc'
-zstyle ':completion:*' rehash true
+#!/usr/bin/zsh
 
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
+# zsh
+[[ -e ~/.config/zsh/completion ]] && source ~/.config/zsh/completion
+[[ -e ~/.config/zsh/keys ]]       && source ~/.config/zsh/keys
+[[ -e ~/.config/zsh/history ]]    && source ~/.config/zsh/history
+[[ -e ~/.config/zsh/prompt ]]     && source ~/.config/zsh/prompt
+[[ -e ~/.config/zsh/cursor ]]     && source ~/.config/zsh/cursor
+[[ -e ~/.aliases ]]               && source ~/.aliases
 
-# open vim to edit the commandline
-# https://stackoverflow.com/a/903973
-autoload -U edit-command-line
-zle -N edit-command-line
-bindkey -M vicmd v edit-command-line
+# fzf
+[[ -e /usr/share/fzf/completion.zsh ]]   && source /usr/share/fzf/completion.zsh
+[[ -e /usr/share/fzf/key-bindings.zsh ]] && source /usr/share/fzf/key-bindings.zsh
 
-[[ -e ~/.zalias ]] && source ~/.zalias
-[[ -e ~/.zkeys ]] && source ~/.zkeys
-[[ -e ~/.zprompt ]] && source ~/.zprompt
+# keychain
+[[ -x $(which keychain) ]] && eval $(keychain --eval --noask --quiet)
