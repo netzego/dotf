@@ -1,0 +1,21 @@
+#!/usr/bin/env zsh
+
+# always load the module zsh/complist before autoloading compinit
+zmodload zsh/complist
+
+# zstyle ':compinstall' filename '/home/anon/.zshrc'
+
+zstyle ':completion:*' rehash true # To get new binaries into `$path` array
+zstyle ':completion:*' squeeze-slashes true # stop interpreting `//` as `/*/`
+zstyle ':completion:*' menu select
+
+setopt MENU_COMPLETE
+# The `autoload` command load a file containing shell commands. To find this
+# file, Zsh will look in the directories of the Zsh file search path, defined
+# in the variable $fpath, and search a file called compinit.
+# - It avoids name conflicts if you have an executable with the same name.
+# - It doesn’t expand aliases thanks to the -U option.
+# - It will load the function only when it’s needed (lazy-loading). It comes in
+#   handy to speed up Zsh startup.
+autoload -Uz compinit; compinit
+_comp_options+=(globdots) # With hidden files
