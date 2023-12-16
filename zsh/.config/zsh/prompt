@@ -1,0 +1,53 @@
+#!/usr/bin/zsh
+
+function __prompt_user {
+    if [[ ${UID} == 0 ]]; then
+        echo "#"
+    else
+        echo ")"
+    fi
+}
+
+function __prompt_shortpwd() {
+    declare -r pth="$(pwd | sed "s%^${HOME}%~%" | tr -s '/' | sed "s%^/%%")"
+	declare short=""
+    # NOTE: zsh's builtin `read` need `-A` instead `-a`
+	IFS=/ read -r -A patharr <<<"$pth"
+	for i in "${patharr[@]}"; do
+		[[ "${i}" != "~" ]] && short+="/"
+		[[ ${i:0:1} == "." ]] && short+="${i:0:2}" || short+="${i:0:1}"
+	done
+	echo "$short"
+}
+
+function __git_prompt_branch {
+    local git_branch=$(git symbolic-ref HEAD --short 2> /dev/null)
+    [[ -n ${git_branch} ]] && echo " ${git_branch} "
+}
+
+# return the num of untracked files
+# see: https://stackoverflow.com/a/2658301
+function __git_prompt_untracked_files {
+    echo $(git status --porcelain=v1 2>/dev/null | grep "^??" | wc -l)
+}
+
+# return the number of change files
+# see: https://stackoverflow.com/a/2658301
+function __git_prompt_dirty_files {
+    echo $(git status --porcelain=v1 2>/dev/null | grep -E "^(M| M)" | wc -l)
+}
+
+function __git_prompt_short {
+    local short=""
+    [[ $(__git_prompt_dirty_files) != 0 ]] && short+="*"
+    [[ $(__git_prompt_untracked_files) != 0 ]] && short+="~"
+    echo "$short"
+}
+
+setopt prompt_subst
+
+PROMPT="%m:"
+PROMPT+='$(__prompt_shortpwd)'
+PROMPT+='$(__git_prompt_branch)'
+PROMPT+='$(__git_prompt_short)'
+PROMPT+=' $(__prompt_user) '
