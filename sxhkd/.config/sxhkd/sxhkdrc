@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	dmenu_run -fn Hack:pixelsize=14 \
+	dmenu_run -fn "Input Mono:size=9" \
 	-nb "#002b36" \
 	-nf "#fdf6e3" \
 	-sb "#fdf6e3" \
