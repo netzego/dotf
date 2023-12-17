@@ -9,7 +9,10 @@ zstyle ':completion:*' rehash true # To get new binaries into `$path` array
 zstyle ':completion:*' squeeze-slashes true # stop interpreting `//` as `/*/`
 zstyle ':completion:*' menu select
 
-setopt MENU_COMPLETE
+setopt NO_MENU_COMPLETE
+setopt AUTO_MENU            # display the menu after the second tab
+setopt NO_ALWAYS_TO_END     # always place the cursor to the end of the word completed
+
 # The `autoload` command load a file containing shell commands. To find this
 # file, Zsh will look in the directories of the Zsh file search path, defined
 # in the variable $fpath, and search a file called compinit.
