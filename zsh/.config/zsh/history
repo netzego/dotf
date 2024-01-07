@@ -11,4 +11,4 @@ setopt HIST_FIND_NO_DUPS        # do not display a previously found event.
 setopt HIST_IGNORE_SPACE        # do not record an event starting with a space.
 setopt HIST_SAVE_NO_DUPS        # do not write a duplicate event to the history file.
 setopt HIST_VERIFY              # do not execute immediately upon history expansion.
-setopt HIST_NO_FUNCTIONS	# do not save function definitions
+setopt HIST_NO_FUNCTIONS	    # do not save function definitions
