@@ -23,6 +23,7 @@ alias gb='git branch -av'
 alias gcd='cd $(git root)'
 alias gls="git ls-files"
 alias gds="git diff --stat"
+alias gd="git diff"
 # xorg
 alias xc="xclip -selection clipboard"
 alias xp="xclip -selection primary"
