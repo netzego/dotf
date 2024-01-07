@@ -30,22 +30,12 @@ alias xp="xclip -selection primary"
 ## vim
 alias v='nvim'
 alias eml='vipe --suffix eml | msmtp -d -t'
-## zsh
-alias ze='v ~/.zshrc'
-alias zp='v ~/.zprofile'
-alias za='v ~/.zaliases'
-alias sz='source ~/.zshrc'
-alias hg='history | grep'
-# iproute2
-alias ib="ip -br"
-## systemd
-alias sd='systemctl'
-alias sda='systemd-analyze'
-alias sdu='systemctl --user'
-alias jc="journalctl"
-alias jcu="journalctl --user"
-# alias nc='netctl'
-alias ping='ping -4'
+# xorg
+alias xc="xclip -selection clipboard"
+alias xc="xclip -selection primary"
+## vim
+alias v='nvim'
+# alias mail='vipe --suffix eml | msmtp -d -t'
 # ssh
 # alias scp="noglob scp"
 alias ssh="TERM=xterm-256color noglob ssh"
@@ -68,10 +58,7 @@ alias yt-dlp="yt-dlp --restrict-filenames"
 alias ytmp3="yt-dlp -x --audio-format mp3 --audio-quality 0" 
 alias youtube-dl="noglob youtube-dl"
 alias rn="perl-rename"
-alias e3="eyeD3"
 alias ffprobe="ffprobe -hide_banner"
-# telegram
-alias tg="telegram-cli"
 # tmux
 alias tm="tmux"
 alias tl="tmux list-sessions"
