@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # set bg and cursor for X
-xsetroot -gray
-xsetroot -cursor_name arrow
+# xsetroot -gray
+# xsetroot -cursor_name arrow
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 pgrep -x dunst >/dev/null || dunst &

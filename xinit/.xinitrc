@@ -1,11 +1,16 @@
-#!/bin/sh
-# ~/.xinitrc
+#!/bin/bash
 
 # [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-# xsetroot -gray
-# xsetroot -cursor_name arrow
-# better done in /etc/vconsole.conf
+# set a typematic delay to 200ms and a typematic rate to 30Hz
+xset r rate 200 30
+
+# set the x root windows properties
+xsetroot -gray
+xsetroot -cursor_name arrow
+
+# better done in /etc/vconsole.conf and /etc/X11/xorg.conf.d/70-custom.conf
+# see also: `man:vconsole.conf`
 # setxkbmap us
 # setxkbmap -option caps:escape
 # setxkbmap -option terminate:ctrl_alt_bksp
