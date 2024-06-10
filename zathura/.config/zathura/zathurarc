@@ -1,4 +1,4 @@
 set show-recent 16
 set scroll-page-aware false
 set selection-clipboard clipboard
-set font "Hack Regular 11"
+set font "Input Mono 14"
