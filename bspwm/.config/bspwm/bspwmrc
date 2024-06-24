@@ -1,14 +1,7 @@
 #!/bin/bash
 
-sxhkd &
-dunst &
-
-# set bg and cursor for X
-# xsetroot -gray
-# xsetroot -cursor_name arrow
-
-pgrep -x sxhkd >/dev/null || sxhkd &
-pgrep -x dunst >/dev/null || dunst &
+pgrep -x sxhkd -u $UID >/dev/null || sxhkd &
+pgrep -x dunst -u $UID >/dev/null || dunst &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
