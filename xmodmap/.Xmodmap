@@ -1,0 +1,9 @@
+! see /usr/include/X11/keysymdef.h for codes
+! make AltGr behave like it should
+keycode 108 = Mode_switch
+
+keycode 14 = 5 percent EuroSign
+keycode 30 = u U udiaeresis Udiaeresis
+keycode 32 = o O odiaeresis Odiaeresis
+keycode 38 = a A adiaeresis Adiaeresis
+keycode 39 = s S ssharp
