@@ -67,3 +67,6 @@ alias td="tmux detach"
 alias tn="tmux new"
 # figlet / toilet
 alias toi="toilet -f 3d"
+# systemd
+alias sc="systemctl"
+alias scu="systemctl --user"
