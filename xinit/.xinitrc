@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
 # set a typematic delay to 200ms and a typematic rate to 30Hz
 xset r rate 200 30
