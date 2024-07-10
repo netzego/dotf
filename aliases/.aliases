@@ -61,7 +61,7 @@ alias rn="perl-rename"
 alias ffprobe="ffprobe -hide_banner"
 # tmux
 alias tm="tmux"
-alias tl="tmux list-sessions"
+alias tl="tmux list-sessions -F '#{session_id} #{session_name}'"
 alias ta="tmux attach -t"
 alias td="tmux detach"
 alias tn="tmux new"
