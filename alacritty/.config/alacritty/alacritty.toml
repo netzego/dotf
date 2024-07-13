@@ -26,7 +26,7 @@ foreground = "0x654735"
 TERM = "xterm-256color"
 
 [font]
-size = 10
+size = 8
 
 [font.bold]
 family = "Input Mono"
