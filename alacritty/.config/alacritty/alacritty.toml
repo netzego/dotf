@@ -1,48 +1,36 @@
-[colors.bright]
-black = "0x654735"
-blue = "0x45707a"
-cyan = "0x4c7a5d"
-green = "0x6c782e"
-magenta = "0x945e80"
-red = "0xc14a4a"
-white = "0xeee0b7"
-yellow = "0xb47109"
-
 [colors.normal]
-black = "0x654735"
-blue = "0x45707a"
-cyan = "0x4c7a5d"
-green = "0x6c782e"
-magenta = "0x945e80"
-red = "0xc14a4a"
-white = "0xeee0b7"
-yellow = "0xb47109"
+
+blue    = "#267aa3"
+cyan    = "#5ecbce"
+green   = "#2e835f"
+magenta = "#ff88d6"
+red     = "#cc2443"
+yellow  = "#d0b56a"
+white   = "#fefcf4"
+black   = "#2e2d31"
+
+# === light ===
+# orange  = "#eaa679"
+# magenta  = "#c7a7ea"
+# red     = "#ff9498"
+# blue    = "#73c2ee"
+
+# cyan    = "#128184"
+# green   = "#79cca4"
+# magenta = "#b92e91"
+# orange  = "#9e6034"
+# purple  = "#8061a0"
+# yellow  = "#886e1f"
 
 [colors.primary]
-background = "0xe2f1c7"
-foreground = "0x654735"
+background = "0xfefcf4"
+foreground = "0x2e2d31"
 
 [env]
 TERM = "xterm-256color"
 
 [font]
-size = 8
-
-[font.bold]
-family = "Input Mono"
-style = "Medium"
-
-[font.bold_italic]
-family = "Input Mono"
-style = "Medium Italic"
-
-[font.italic]
-family = "Input Mono"
-style = "Light Italic"
-
-[font.normal]
-family = "Input Mono"
-style = "Light"
+size = 7
 
 [window.padding]
 x = 2
