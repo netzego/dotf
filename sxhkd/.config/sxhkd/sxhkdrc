@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	dmenu_run -fn "Input Mono:size=9" \
+	dmenu_run -fn "monospace:size=11" \
 	-nb "#002b36" \
 	-nf "#fdf6e3" \
 	-sb "#fdf6e3" \
@@ -88,9 +88,11 @@ super + {_,shift + }c
 
 # focus the older or newer node in the focus history
 super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+	bspc node {prev.normal.local,next.normal.local} -f
+
+# focus the older or newer desktop in the focus history
+super + shift + {o,i}
+	bspc desktop {prev.occupied,next.occupied} -f
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
