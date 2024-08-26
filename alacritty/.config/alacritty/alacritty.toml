@@ -1,4 +1,6 @@
-[colors.normal]
+[colors.primary]
+background = "#ffffff"
+foreground = "#2e2d31"
 
 blue    = "#267aa3"
 cyan    = "#5ecbce"
