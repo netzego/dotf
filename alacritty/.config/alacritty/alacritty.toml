@@ -2,31 +2,15 @@
 background = "#ffffff"
 foreground = "#2e2d31"
 
+[colors.normal]
 blue    = "#267aa3"
 cyan    = "#5ecbce"
-green   = "#2e835f"
+green   = "#24d998"
 magenta = "#ff88d6"
 red     = "#cc2443"
 yellow  = "#d0b56a"
 white   = "#fefcf4"
 black   = "#2e2d31"
-
-# === light ===
-# orange  = "#eaa679"
-# magenta  = "#c7a7ea"
-# red     = "#ff9498"
-# blue    = "#73c2ee"
-
-# cyan    = "#128184"
-# green   = "#79cca4"
-# magenta = "#b92e91"
-# orange  = "#9e6034"
-# purple  = "#8061a0"
-# yellow  = "#886e1f"
-
-[colors.primary]
-background = "0xfefcf4"
-foreground = "0x2e2d31"
 
 [env]
 TERM = "xterm-256color"
