@@ -20,8 +20,16 @@ size = 10
 
 [font.normal]
     family = "monospace"
-    style = "regular"
+    style = "light"
 
 [font.italic]
     family = "monospace"
-    style = "regular Italic"
+    style = "light italic"
+
+[font.bold]
+    family = "monospace"
+    style = "medium"
+
+[font.bold_italic]
+    family = "monospace"
+    style = "medium italic"
