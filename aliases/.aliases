@@ -15,7 +15,7 @@ alias g="git"
 alias ga='git add'
 alias gap='git add --patch'
 alias gc='git commit -v'
-alias gl='git log --oneline --decorate -30'
+alias gl='git log --oneline --decorate --stat -10'
 alias gla='git log --oneline --decorate'
 alias gs='git status --short'
 alias gco='git checkout'
@@ -29,6 +29,7 @@ alias xc="xclip -selection clipboard"
 alias xp="xclip -selection primary"
 ## vim
 alias v='nvim'
+alias vf='v $(fzf)'
 alias eml='vipe --suffix eml | msmtp -d -t'
 # xorg
 alias xc="xclip -selection clipboard"
@@ -70,3 +71,7 @@ alias toi="toilet -f 3d"
 # systemd
 alias sc="systemctl"
 alias scu="systemctl --user"
+# bspwm
+alias ,bspm="bspc query -M"
+alias ,bspd="bspc query -D"
+alias ,bspn="bspc query -N"
