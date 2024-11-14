@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	dmenu_run -fn "monospace:size=11" \
+	dmenu_run -fn "monospace:size=12" \
 	-nb "#002b36" \
 	-nf "#fdf6e3" \
 	-sb "#fdf6e3" \
