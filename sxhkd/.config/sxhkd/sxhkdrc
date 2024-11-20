@@ -75,7 +75,7 @@ super + ctrl + {m,x,y,z}
 #
 
 # focus the node in the given direction
-super + {_,shift + }{bracketleft,j,k,bracketright}
+super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
@@ -83,7 +83,7 @@ super + {_,shift + }{bracketleft,j,k,bracketright}
 # 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
-super + {_,shift + }c
+super + {_,shift + } + space
 	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the older or newer node in the focus history
@@ -92,7 +92,8 @@ super + {o,i}
 
 # focus the older or newer desktop in the focus history
 super + shift + {o,i}
-	bspc desktop {prev.occupied,next.occupied} -f
+	bspc desktop {prev,netx}.occupied -f
+    # bspc desktop {prev.occupied,next.occupied} -f
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
