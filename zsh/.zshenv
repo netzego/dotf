@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
 
-export PATH="$HOME/scripts:$PATH"
+typeset -U path
+path=($HOME/scripts $path)
+export PATH
 
 # xdg
 export XDG_CONFIG_HOME="$HOME/.config"
