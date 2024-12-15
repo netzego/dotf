@@ -14,6 +14,9 @@ export HISTFILE=~/.history
 export HISTSIZE=1024
 export SAVEHIST=1024
 
+# gnupg
+export GPG_TTY=$(tty)
+
 # editor
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
