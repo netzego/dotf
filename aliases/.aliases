@@ -15,15 +15,18 @@ alias g="git"
 alias ga='git add'
 alias gap='git add --patch'
 alias gc='git commit -v'
-alias gl='git log --oneline --decorate --stat -10'
+alias gl='git log --oneline --decorate -10'
+alias gll='git log --oneline --decorate --stat -10'
 alias gla='git log --oneline --decorate'
 alias gs='git status --short'
 alias gco='git checkout'
 alias gb='git branch -av'
 alias gcd='cd $(git root)'
-alias gls="git ls-files"
+alias gf="git ls-files"
 alias gds="git diff --stat"
 alias gd="git diff"
+alias gw="git switch"
+alias gwc="git switch --create"
 # xorg
 alias xc="xclip -selection clipboard"
 alias xp="xclip -selection primary"
@@ -41,6 +44,7 @@ alias v='nvim'
 # alias scp="noglob scp"
 alias ssh="TERM=xterm-256color noglob ssh"
 alias sa='ssh-add'
+alias sshnoc="ssh -o StrictHostKeyChecking=no"
 # dictd
 alias dic="sdcv --color"
 alias dict="sdcv -n -c -0 -1"
@@ -60,6 +64,7 @@ alias ytmp3="yt-dlp -x --audio-format mp3 --audio-quality 0"
 alias youtube-dl="noglob youtube-dl"
 alias rn="perl-rename"
 alias ffprobe="ffprobe -hide_banner"
+alias docker="podman"
 # tmux
 alias tm="tmux"
 alias tl="tmux list-sessions -F '#{session_id} #{session_name}'"
