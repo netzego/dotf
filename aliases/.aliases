@@ -25,6 +25,7 @@ alias gcd='cd $(git root)'
 alias gf="git ls-files"
 alias gds="git diff --stat"
 alias gd="git diff"
+alias gp="git push"
 alias blame="git blame --shortstats"
 alias gw="git switch"
 alias gwc="git switch --create"
