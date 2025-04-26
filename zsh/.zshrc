@@ -1,6 +1,7 @@
 #!/usr/bin/zsh
 
 # zsh
+[[ -e ~/.config/zsh/settings ]]   && source ~/.config/zsh/settings
 [[ -e ~/.config/zsh/completion ]] && source ~/.config/zsh/completion
 [[ -e ~/.config/zsh/keys ]]       && source ~/.config/zsh/keys
 [[ -e ~/.config/zsh/history ]]    && source ~/.config/zsh/history
