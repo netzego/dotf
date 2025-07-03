@@ -36,3 +36,6 @@ FZF_DEFAULT_OPTS="--reverse"
 FZF_DEFAULT_OPTS+=" --color=bw"
 # FZF_DEFAULT_OPTS+=" --color=bg:#e2f1c7,bg+:#d1e5bc,fg:#282828,fg+:#282828,hl:#282828,hl+:#282828,pointer:#282828,marker:#282828,prompt:#282828,info:#282828"
 export FZF_DEFAULT_OPTS
+
+# golang
+export GOPATH="$HOME/.go"
