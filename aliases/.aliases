@@ -41,9 +41,6 @@ alias xp="xclip -selection primary"
 alias v='nvim'
 alias vf='v $(fzf)'
 alias eml='vipe --suffix eml | msmtp -d -t'
-# xorg
-alias xc="xclip -selection clipboard"
-alias xc="xclip -selection primary"
 ## vim
 alias v='nvim'
 # alias mail='vipe --suffix eml | msmtp -d -t'
