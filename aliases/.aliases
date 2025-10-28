@@ -84,3 +84,5 @@ alias scu="systemctl --user"
 alias ,bspm="bspc query -M"
 alias ,bspd="bspc query -D"
 alias ,bspn="bspc query -N"
+# snapper
+alias snapper="snapper --iso"
