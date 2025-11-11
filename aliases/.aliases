@@ -10,6 +10,7 @@ alias lt="tree -C --dirsfirst -I 'node_modules\|__pycache__\|*.egg-info\|venv\|l
 alias ltd='lt -d'
 alias lta='lt -a'
 alias fd="fd -c never"
+alias cal="cal -wm"
 # jj
 alias js="jj st"
 alias jl="jj log"
