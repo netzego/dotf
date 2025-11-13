@@ -1,6 +1,6 @@
 #!/bin/bash
-
 export EDITOR=nvim
+export VISUAL="$EDITOR"
 export MANWIDTH=79
 export SYSTEMD_COLORS=16
 export GIT_PS1_SHOWDIRTYSTATE=1
@@ -8,3 +8,19 @@ export GIT_COMPLETION_SHOW_ALL=1
 export PYTHONDONTWRITEBYTECODE=1
 export PIP_REQUIRE_VIRTUALENV=true
 export PATH="${HOME}/scripts:${PATH}"
+# gnupg
+export GPG_TTY=$(tty)
+# xdg
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+# python
+export PYTHONDONTWRITEBYTECODE=1
+export PIP_REQUIRE_VIRTUALENV=true
+# fzf
+FZF_DEFAULT_OPTS="--reverse"
+FZF_DEFAULT_OPTS+=" --color=bw"
+# FZF_DEFAULT_OPTS+=" --color=bg:#e2f1c7,bg+:#d1e5bc,fg:#282828,fg+:#282828,hl:#282828,hl+:#282828,pointer:#282828,marker:#282828,prompt:#282828,info:#282828"
+export FZF_DEFAULT_OPTS
+# golang
+export GOPATH="$HOME/.go"
