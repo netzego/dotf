@@ -48,7 +48,8 @@ alias v='nvim'
 # ssh
 alias ssh="TERM=xterm-256color ssh"
 alias sa='ssh-add'
-alias sshnoc="ssh -o StrictHostKeyChecking=no"
+alias ssh_nocheck="ssh -o StrictHostKeyChecking=no"
+alias ssh_nopubkey="ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no"
 # dictd
 # alias dic="sdcv --color"
 # alias dict="sdcv -n -c -0 -1"
